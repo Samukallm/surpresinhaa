@@ -46,7 +46,7 @@ function Cantada() {
                     document.getElementById('img2').innerHTML = '<img src="imgs/emoji flornaboca.jpg" alt="Emoji Flor na Boca" class="img-fluid">';
                     btnContainer.innerHTML = '<div class="mt-4 text-success font-weight-bold" style="font-size:1.4rem;">Te levando pro WhatsApp... 💬</div>';
                     setTimeout(function() {
-                        window.location.href = 'https://wa.me/5511954722965?text=Oi!%20A%20resposta%20é%20sim%20❤️';
+                        window.location.href = 'https://wa.me/5511996413861?text=Oi!%20A%20resposta%20é%20sim%20❤️';
                     }, 1200);
                 };
                 document.getElementById('btn-nao').onclick = function() {
