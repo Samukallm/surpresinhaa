@@ -1,0 +1,81 @@
+
+/* Flip animation no body */
+body.flip {
+  animation: flipBody 0.7s cubic-bezier(.77,0,.18,1);
+  transform-style: preserve-3d;
+}
+
+@keyframes flipBody {
+  0% { transform: rotateY(0deg); }
+  40% { transform: rotateY(90deg); }
+  60% { transform: rotateY(90deg); }
+  100% { transform: rotateY(0deg); }
+}
+/* Centraliza o conteúdo principal acima das imagens */
+.centraliza-tudo {
+    position: relative;
+    z-index: 20;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    background: #fff;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Centraliza e personaliza as imagens */
+
+/* Imagens maiores e posições aleatórias */
+#img1, #img2 {
+    position: absolute;
+    z-index: 10;
+}
+#img1 {
+    top: 10%;
+    left: 5%;
+    transform: rotate(-8deg);
+}
+#img2 {
+    bottom: 12%;
+    right: 8%;
+    transform: rotate(12deg);
+}
+
+#img1 img, #img2 img {
+    max-width: 220px;
+    width: 35vw;
+    min-width: 120px;
+    border-radius: 30px;
+    border: 3px solid #eee;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    transition: transform 0.2s, border-color 0.2s;
+}
+#img1 img:hover, #img2 img:hover {
+    transform: scale(1.08) rotate(-3deg);
+    border-color: #007bff;
+}
+
+h1 {
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    z-index: 20;
+    position: relative;
+}
+
+#btn-cantada {
+    font-size: 1.2rem;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+#btn-cantada:hover {
+    background: #0056b3;
+    color: #fff;
+}
